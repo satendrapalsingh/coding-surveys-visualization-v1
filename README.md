@@ -1,2 +1,4 @@
 # fcc-new-coders-survey-visualization
-D3.js Visualizations of FreeCodeCamp's New Coders Survey(s) data.
+
+This repository is for visualizing FreeCodeCamp's New Coders Survey(s) data, using D3.js.
+Current survey data available for years - 2016, 2017.
