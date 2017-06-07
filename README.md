@@ -1,4 +1,4 @@
-# FreeCodeCamp-New-Coders-Survey-Visualization
+# FreeCodeCamp New Coders Survey Visualization
 
 This repository is for visualizing FreeCodeCamp's New Coders Survey data, using D3.js.
 
