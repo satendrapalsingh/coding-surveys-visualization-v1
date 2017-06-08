@@ -1,6 +1,6 @@
-// all javascript goes in here //
-var mapJSON;
+// code for loading and parsing local map.json file //
 
+var mapJSON;
 // check if FileReader API supported by user's browser //
 if (!window.FileReader) {
   alert('Sorry, the Filereader API is not supported by your browser.');
@@ -34,9 +34,14 @@ function loadFile(){
    var lines = text.target.result;
    mapJSON = JSON.parse(lines);
 // append the mapJSON data to HTML elements for display in the browser //
-    document.getElementById("jsonData").innerHTML = mapJSON.profile.age;
+    document.getElementById("jsonData").innerHTML = getAllProps(mapJSON);
   }
   
+// function to print object properties recursively //
+function getAllProps(obj){
+  
+  return Object.keys(obj);
+}
 
 };
 
