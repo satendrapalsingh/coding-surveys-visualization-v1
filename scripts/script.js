@@ -2,9 +2,7 @@
 var mapJSON;
 
 // check if FileReader API supported by user's browser //
-if (window.FileReader) {
-  // Great success! All the File APIs are supported.
-} else {
+if (!window.FileReader) {
   alert('Sorry, the Filereader API is not supported by your browser.');
 }
 
@@ -12,11 +10,6 @@ if (window.FileReader) {
 function loadFile(){
   var input, file, fr;
 
-//  if (typeof window.FileReader() !== "function"){
-//     alert("filereader function not supported by your browser");
-//      return;
-//  }
-  
   input = document.getElementById("mapfile");
   if (!input){
       alert("input filename not found");
