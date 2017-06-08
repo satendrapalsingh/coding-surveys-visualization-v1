@@ -24,7 +24,6 @@ function loadFile(){
       return;
   }
   else {
-      alert("all OK, about to create new FileReader object");
       file = input.files[0];
       fr = new FileReader();
       fr.onload = receivedText;
@@ -34,10 +33,11 @@ function loadFile(){
   function receivedText(text){
    var lines = text.target.result;
    mapJSON = JSON.parse(lines);
+// append the mapJSON data to HTML elements for display in the browser //
+    document.getElementById("jsonData").innerHTML = mapJSON.profile.age;
   }
   
-  // append the mapJSON data to HTML elements for display in the browser //
-    document.getElementById("jsonData").innerHTML = mapJSON;
+
 };
 
 

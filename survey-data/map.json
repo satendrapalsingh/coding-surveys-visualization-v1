@@ -1,122 +1,122 @@
 {
   "profile": {
     "age": {
-      "2016": [
-        "Age"
-      ],
-      "2017": [
-        "Age"
-      ]
+      "y2016": [
+          "Age1"
+          ],
+      "y2017": [
+          "Age2"
+          ]
     },
     "gender": {
-      "2016": [
+      "y2016": [
         "Gender"
       ],
-      "2017": [
+      "y2017": [
         "Gender",
         "GenderOther"
       ]
     },
     "background": {
       "military": {
-        "2016": [
+        "y2016": [
           "HasServedInMilitary"
         ],
-        "2017": [
+        "y2017": [
           "HasServedInMilitary"
         ]
       },
       "ethnicMinority": {
-        "2016": [
+        "y2016": [
           "IsEthnicMinority"
         ],
-        "2017": [
+        "y2017": [
           "IsEthnicMinority"
         ]
       },
       "disabilitiesBenefits": {
-        "2016": [
+        "y2016": [
           "IsReceiveDisabilitiesBenefits"
         ],
-        "2017": [
+        "y2017": [
           "IsReceiveDisabilitiesBenefits"
         ]
       }
     },
     "family": {
       "maritalStatus": {
-        "2016": [
+        "y2016": [
           "MaritalStatus"
         ],
-        "2017": [
+        "y2017": [
           "MaritalStatus"
         ]
       },
       "hasChildren": {
-        "2016": [
+        "y2016": [
           "HasChildren"
         ],
-        "2017": [
+        "y2017": [
           "HasChildren"
         ]
       },
       "childrenNumber": {
-        "2016": [
+        "y2016": [
           "ChildrenNumber"
         ],
-        "2017": [
+        "y2017": [
           "ChildrenNumber"
         ]
       }
     },
     "ethnicity": {
       "cityPopulation": {
-        "2016": [
+        "y2016": [
           "CityPopulation"
         ],
-        "2017": [
+        "y2017": [
           "CityPopulation"
         ]
       },
       "countryCitizen": {
-        "2016": [
+        "y2016": [
           "CountryCitizen"
         ],
-        "2017": [
+        "y2017": [
           "CountryCitizen"
         ]
       },
       "countryResidence": {
-        "2016": [
+        "y2016": [
           "CountryLive"
         ],
-        "2017": [
+        "y2017": [
           "CountryLive"
         ]
       },
       "nativeTongue": {
-        "2016": [
+        "y2016": [
           "LanguageAtHome"
         ],
-        "2017": [
+        "y2017": [
           "LanguageAtHome"
         ]
       }
     },
     "education": {
       "degreeAttained": {
-        "2016": [
+        "y2016": [
           "SchoolDegree"
         ],
-        "2017": [
+        "y2017": [
           "SchoolDegree"
         ]
       },
       "majoredIn": {
-        "2016": [
+        "y2016": [
           "SchoolMajor"
         ],
-        "2017": [
+        "y2017": [
           "SchoolMajor"
         ]
       }
@@ -124,77 +124,77 @@
   },
   "financial": {
     "income": {
-      "2016": [
+      "y2016": [
         "Income"
       ],
-      "2017": [
+      "y2017": [
         "Income"
       ]
     },
     "challenges": {
       "financialDependents": {
-        "2016": [
+        "y2016": [
           "HasFinancialDependents"
         ],
-        "2017": [
+        "y2017": [
           "HasFinancialDependents"
         ]
       },
       "financiallySupporting": {
-        "2016": [
+        "y2016": [
           "FinanciallySupporting"
         ],
-        "2017": [
+        "y2017": [
           "FinanciallySupporting"
         ]
       },
       "highSpeedInternet": {
-        "2016": [
+        "y2016": [
           "HasHighSpdInternet"
         ],
-        "2017": [
+        "y2017": [
           "HasHighSpdInternet"
         ]
       }
     },
     "debt": {
       "hasDebt": {
-        "2016": [
+        "y2016": [
           "HasDebt"
         ],
-        "2017": [
+        "y2017": [
           "HasDebt"
         ]
       },
       "homeMortgage": {
-        "2016": [
+        "y2016": [
           "HasHomeMortgage"
         ],
-        "2017": [
+        "y2017": [
           "HasHomeMortgage"
         ]
       },
       "homeMortgageAmount": {
-        "2016": [
+        "y2016": [
           "HomeMortgageOwe"
         ],
-        "2017": [
+        "y2017": [
           "HomeMortgageOwe"
         ]
       },
       "studentDebt": {
-        "2016": [
+        "y2016": [
           "HasStudentDebt"
         ],
-        "2017": [
+        "y2017": [
           "HasStudentDebt"
         ]
       },
       "studentDebtAmount": {
-        "2016": [
+        "y2016": [
           "StudentDebtOwe"
         ],
-        "2017": [
+        "y2017": [
           "StudentDebtOwe"
         ]
       }
@@ -203,46 +203,46 @@
   "employment": {
     "current": {
       "status": {
-        "2016": [
+        "y2016": [
           "EmploymentStatus",
           "EmploymentStatusOther"
         ],
-        "2017": [
+        "y2017": [
           "EmploymentStatus",
           "EmploymentStatusOther"
         ]
       },
       "commute": {
-        "2016": [
+        "y2016": [
           "CommuteTime"
         ],
-        "2017": [
+        "y2017": [
           "CommuteTime"
         ]
       },
       "field": {
-        "2016": [
+        "y2016": [
           "EmploymentField",
           "EmploymentFieldOther"
         ],
-        "2017": [
+        "y2017": [
           "EmploymentField",
           "EmploymentFieldOther"
         ]
       },
       "underEmployed": {
-        "2016": [
+        "y2016": [
           "IsUnderEmployed"
         ],
-        "2017": [
+        "y2017": [
           "IsUnderEmployed"
         ]
       },
       "developer": {
-        "2016": [
+        "y2016": [
           "IsSoftwareDev"
         ],
-        "2017": [
+        "y2017": [
           "IsSoftwareDev",
           "FirstDevJob"
         ]
@@ -250,51 +250,51 @@
     },
     "aspiring": {
       "appliedTime": {
-        "2016": [
+        "y2016": [
           "JobApplyWhen"
         ],
-        "2017": [
+        "y2017": [
           "JobApplyWhen"
         ]
       },
       "willingToRelocate": {
-        "2016": [
+        "y2016": [
           "JobRelocateYesNo"
         ],
-        "2017": [
+        "y2017": [
           "JobRelocateYesNo"
         ]
       },
       "locationPreference": {
-        "2016": [
+        "y2016": [
           "JobWherePref"
         ],
-        "2017": [
+        "y2017": [
           "JobWherePref"
         ]
       },
       "expectedSalary": {
-        "2016": [
+        "y2016": [
           "ExpectedEarning"
         ],
-        "2017": [
+        "y2017": [
           "ExpectedEarning"
         ]
       },
       "rolePreference": {
-        "2016": [
+        "y2016": [
           "JobPref"
         ],
-        "2017": [
+        "y2017": [
           "JobPref"
         ]
       },
       "roleInterestedIn": {
-        "2016": [
+        "y2016": [
           "JobRoleInterest",
           "JobRoleInterestOther"
         ],
-        "2017": [
+        "y2017": [
           "JobRoleInterest",
           {
             "selection": [
@@ -319,104 +319,104 @@
   },
   "programming": {
     "monthsProgrammingFor": {
-      "2016": [
+      "y2016": [
         "MonthsProgramming"
       ],
-      "2017": [
+      "y2017": [
         "MonthsProgramming"
       ]
     },
     "hoursSpentLearning": {
-      "2016": [
+      "y2016": [
         "HoursLearning"
       ],
-      "2017": [
+      "y2017": [
         "HoursLearning"
       ]
     },
     "moneySpentLearning": {
-      "2016": [
+      "y2016": [
         "MoneyForLearning"
       ],
-      "2017": [
+      "y2017": [
         "MoneyForLearning"
       ]
     },
     "bootcampsAttended": {
       "attendedBootcamp": {
-        "2016": [
+        "y2016": [
           "AttendedBootcamp"
         ],
-        "2017": [
+        "y2017": [
           "AttendedBootcamp"
         ]
       },
       "bootcamploanTaken": {
-        "2016": [
+        "y2016": [
           "BootcampLoanYesNo"
         ],
-        "2017": [
+        "y2017": [
           "BootcampLoanYesNo"
         ]
       },
       "bootcampCompleted": {
-        "2016": [
+        "y2016": [
           "BootcampFinish"
         ],
-        "2017": [
+        "y2017": [
           "BootcampFinish"
         ]
       },
       "bootcampCompletedMonthsAgo": {
-        "2016": [
+        "y2016": [
           "BootcampMonthsAgo"
         ],
-        "2017": []
+        "y2017": []
       },
       "bootcampAttendedName": {
-        "2016": [
+        "y2016": [
           "BootcampName"
         ],
-        "2017": [
+        "y2017": [
           "BootcampName"
         ]
       },
       "bootcampRecommended": {
-        "2016": [
+        "y2016": [
           "BootcampRecommend"
         ],
-        "2017": [
+        "y2017": [
           "BootcampRecommend"
         ]
       },
       "afterBootcamp": {
         "jobsLanded": {
-          "2016": [
+          "y2016": [
             "BootcampFullJobAfter"
           ],
-          "2017": []
+          "y2017": []
         },
         "salaryOffered": {
-          "2016": [
+          "y2016": [
             "BootcampPostSalary"
           ],
-          "2017": []
+          "y2017": []
         }
       }
     },
     "codeEventsAttended": {
       "codeEventsGeneric": {
-        "2016": [
+        "y2016": [
           "CodeEventBootcamp",
           "CodeEventCoffee",
           "CodeEventConferences"
         ],
-        "2017": [
+        "y2017": [
           "CodeEventConferences"
         ]
       },
       "codeEventsSelection": {
-        "2016": [
+        "y2016": [
           "CodeEventDjangoGirls",
           "CodeEventGameJam",
           "CodeEventGirlDev",
@@ -431,7 +431,7 @@
           "CodeEventWomenCode",
           "CodeEventWorkshop"
         ],
-        "2017": [
+        "y2017": [
           "CodeEventDjangoGirls",
           "CodeEventGameJam",
           "CodeEventGirlDev",
@@ -452,17 +452,17 @@
     },
     "codePodcastsFollowing": {
       "podcastsFollowing": {
-        "2016": [
+        "y2016": [
           "PodcastNone",
           "PodcastOther"
         ],
-        "2017": [
+        "y2017": [
           "PodcastNone",
           "PodcastOther"
         ]
       },
       "podcastsSelection": {
-        "2016": [
+        "y2016": [
           "PodcastChangeLog",
           "PodcastCodeNewbie",
           "PodcastCodingBlocks",
@@ -478,7 +478,7 @@
           "PodcastTalkPython",
           "PodcastWebAhead"
         ],
-        "2017": [
+        "y2017": [
           "PodcastChangeLog",
           "PodcastCodeNewbie",
           "PodcastDevTea",
@@ -499,39 +499,39 @@
     },
     "resourcesUsed": {
       "blogsFollowed": {
-        "2016": [
+        "y2016": [
           "ResourceBlogs"
         ],
-        "2017": []
+        "y2017": []
       },
       "booksRead": {
-        "2016": [
+        "y2016": [
           "ResourceBooks"
         ],
-        "2017": []
+        "y2017": []
       },
       "googleSearches": {
-        "2016": [
+        "y2016": [
           "ResourceGoogle"
         ],
-        "2017": []
+        "y2017": []
       },
       "youtubeVideos": {
-        "2016": [
+        "y2016": [
           "ResourceYouTube"
         ],
-        "2017": []
+        "y2017": []
       },
       "otherResources": {
-        "2016": [
+        "y2016": [
           "ResourceOther"
         ],
-        "2017": [
+        "y2017": [
           "ResourceOther"
         ]
       },
       "resourceSelection": {
-        "2016": [
+        "y2016": [
           "ResourceCodecademy",
           "ResourceCoursera",
           "ResourceCodeWars",
@@ -554,7 +554,7 @@
           "ResourceUdemy",
           "ResourceW3Schools"
         ],
-        "2017": [
+        "y2017": [
           "ResourceCodecademy",
           "ResourceCoursera",
           "ResourceCodeWars",
@@ -577,8 +577,8 @@
         ]
       },
       "youtubeSelection": {
-        "2016": [],
-        "2017": [
+        "y2016": [],
+        "y2017": [
           "YouTubeCodeCourse",
           "YouTubeCodingTrain",
           "YouTubeCodingTut360",
