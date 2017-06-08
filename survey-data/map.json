@@ -1,0 +1,603 @@
+{
+  "profile": {
+    "age": {
+      "2016": [
+        "Age"
+      ],
+      "2017": [
+        "Age"
+      ]
+    },
+    "gender": {
+      "2016": [
+        "Gender"
+      ],
+      "2017": [
+        "Gender",
+        "GenderOther"
+      ]
+    },
+    "background": {
+      "military": {
+        "2016": [
+          "HasServedInMilitary"
+        ],
+        "2017": [
+          "HasServedInMilitary"
+        ]
+      },
+      "ethnicMinority": {
+        "2016": [
+          "IsEthnicMinority"
+        ],
+        "2017": [
+          "IsEthnicMinority"
+        ]
+      },
+      "disabilitiesBenefits": {
+        "2016": [
+          "IsReceiveDisabilitiesBenefits"
+        ],
+        "2017": [
+          "IsReceiveDisabilitiesBenefits"
+        ]
+      }
+    },
+    "family": {
+      "maritalStatus": {
+        "2016": [
+          "MaritalStatus"
+        ],
+        "2017": [
+          "MaritalStatus"
+        ]
+      },
+      "hasChildren": {
+        "2016": [
+          "HasChildren"
+        ],
+        "2017": [
+          "HasChildren"
+        ]
+      },
+      "childrenNumber": {
+        "2016": [
+          "ChildrenNumber"
+        ],
+        "2017": [
+          "ChildrenNumber"
+        ]
+      }
+    },
+    "ethnicity": {
+      "cityPopulation": {
+        "2016": [
+          "CityPopulation"
+        ],
+        "2017": [
+          "CityPopulation"
+        ]
+      },
+      "countryCitizen": {
+        "2016": [
+          "CountryCitizen"
+        ],
+        "2017": [
+          "CountryCitizen"
+        ]
+      },
+      "countryResidence": {
+        "2016": [
+          "CountryLive"
+        ],
+        "2017": [
+          "CountryLive"
+        ]
+      },
+      "nativeTongue": {
+        "2016": [
+          "LanguageAtHome"
+        ],
+        "2017": [
+          "LanguageAtHome"
+        ]
+      }
+    },
+    "education": {
+      "degreeAttained": {
+        "2016": [
+          "SchoolDegree"
+        ],
+        "2017": [
+          "SchoolDegree"
+        ]
+      },
+      "majoredIn": {
+        "2016": [
+          "SchoolMajor"
+        ],
+        "2017": [
+          "SchoolMajor"
+        ]
+      }
+    }
+  },
+  "financial": {
+    "income": {
+      "2016": [
+        "Income"
+      ],
+      "2017": [
+        "Income"
+      ]
+    },
+    "challenges": {
+      "financialDependents": {
+        "2016": [
+          "HasFinancialDependents"
+        ],
+        "2017": [
+          "HasFinancialDependents"
+        ]
+      },
+      "financiallySupporting": {
+        "2016": [
+          "FinanciallySupporting"
+        ],
+        "2017": [
+          "FinanciallySupporting"
+        ]
+      },
+      "highSpeedInternet": {
+        "2016": [
+          "HasHighSpdInternet"
+        ],
+        "2017": [
+          "HasHighSpdInternet"
+        ]
+      }
+    },
+    "debt": {
+      "hasDebt": {
+        "2016": [
+          "HasDebt"
+        ],
+        "2017": [
+          "HasDebt"
+        ]
+      },
+      "homeMortgage": {
+        "2016": [
+          "HasHomeMortgage"
+        ],
+        "2017": [
+          "HasHomeMortgage"
+        ]
+      },
+      "homeMortgageAmount": {
+        "2016": [
+          "HomeMortgageOwe"
+        ],
+        "2017": [
+          "HomeMortgageOwe"
+        ]
+      },
+      "studentDebt": {
+        "2016": [
+          "HasStudentDebt"
+        ],
+        "2017": [
+          "HasStudentDebt"
+        ]
+      },
+      "studentDebtAmount": {
+        "2016": [
+          "StudentDebtOwe"
+        ],
+        "2017": [
+          "StudentDebtOwe"
+        ]
+      }
+    }
+  },
+  "employment": {
+    "current": {
+      "status": {
+        "2016": [
+          "EmploymentStatus",
+          "EmploymentStatusOther"
+        ],
+        "2017": [
+          "EmploymentStatus",
+          "EmploymentStatusOther"
+        ]
+      },
+      "commute": {
+        "2016": [
+          "CommuteTime"
+        ],
+        "2017": [
+          "CommuteTime"
+        ]
+      },
+      "field": {
+        "2016": [
+          "EmploymentField",
+          "EmploymentFieldOther"
+        ],
+        "2017": [
+          "EmploymentField",
+          "EmploymentFieldOther"
+        ]
+      },
+      "underEmployed": {
+        "2016": [
+          "IsUnderEmployed"
+        ],
+        "2017": [
+          "IsUnderEmployed"
+        ]
+      },
+      "developer": {
+        "2016": [
+          "IsSoftwareDev"
+        ],
+        "2017": [
+          "IsSoftwareDev",
+          "FirstDevJob"
+        ]
+      }
+    },
+    "aspiring": {
+      "appliedTime": {
+        "2016": [
+          "JobApplyWhen"
+        ],
+        "2017": [
+          "JobApplyWhen"
+        ]
+      },
+      "willingToRelocate": {
+        "2016": [
+          "JobRelocateYesNo"
+        ],
+        "2017": [
+          "JobRelocateYesNo"
+        ]
+      },
+      "locationPreference": {
+        "2016": [
+          "JobWherePref"
+        ],
+        "2017": [
+          "JobWherePref"
+        ]
+      },
+      "expectedSalary": {
+        "2016": [
+          "ExpectedEarning"
+        ],
+        "2017": [
+          "ExpectedEarning"
+        ]
+      },
+      "rolePreference": {
+        "2016": [
+          "JobPref"
+        ],
+        "2017": [
+          "JobPref"
+        ]
+      },
+      "roleInterestedIn": {
+        "2016": [
+          "JobRoleInterest",
+          "JobRoleInterestOther"
+        ],
+        "2017": [
+          "JobRoleInterest",
+          {
+            "selection": [
+              "JobInterestDevOps",
+              "JobInterestBackEnd",
+              "JobInterestDataSci",
+              "JobInterestInfoSec",
+              "JobInterestMobile",
+              "JobInterestQAEngr",
+              "JobInterestProjMngr",
+              "JobInterestFrontEnd",
+              "JobInterestDataEngr",
+              "JobInterestFullStack",
+              "JobInterestGameDev",
+              "JobInterestUX",
+              "JobInterestOther"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "programming": {
+    "monthsProgrammingFor": {
+      "2016": [
+        "MonthsProgramming"
+      ],
+      "2017": [
+        "MonthsProgramming"
+      ]
+    },
+    "hoursSpentLearning": {
+      "2016": [
+        "HoursLearning"
+      ],
+      "2017": [
+        "HoursLearning"
+      ]
+    },
+    "moneySpentLearning": {
+      "2016": [
+        "MoneyForLearning"
+      ],
+      "2017": [
+        "MoneyForLearning"
+      ]
+    },
+    "bootcampsAttended": {
+      "attendedBootcamp": {
+        "2016": [
+          "AttendedBootcamp"
+        ],
+        "2017": [
+          "AttendedBootcamp"
+        ]
+      },
+      "bootcamploanTaken": {
+        "2016": [
+          "BootcampLoanYesNo"
+        ],
+        "2017": [
+          "BootcampLoanYesNo"
+        ]
+      },
+      "bootcampCompleted": {
+        "2016": [
+          "BootcampFinish"
+        ],
+        "2017": [
+          "BootcampFinish"
+        ]
+      },
+      "bootcampCompletedMonthsAgo": {
+        "2016": [
+          "BootcampMonthsAgo"
+        ],
+        "2017": []
+      },
+      "bootcampAttendedName": {
+        "2016": [
+          "BootcampName"
+        ],
+        "2017": [
+          "BootcampName"
+        ]
+      },
+      "bootcampRecommended": {
+        "2016": [
+          "BootcampRecommend"
+        ],
+        "2017": [
+          "BootcampRecommend"
+        ]
+      },
+      "afterBootcamp": {
+        "jobsLanded": {
+          "2016": [
+            "BootcampFullJobAfter"
+          ],
+          "2017": []
+        },
+        "salaryOffered": {
+          "2016": [
+            "BootcampPostSalary"
+          ],
+          "2017": []
+        }
+      }
+    },
+    "codeEventsAttended": {
+      "codeEventsGeneric": {
+        "2016": [
+          "CodeEventBootcamp",
+          "CodeEventCoffee",
+          "CodeEventConferences"
+        ],
+        "2017": [
+          "CodeEventConferences"
+        ]
+      },
+      "codeEventsSelection": {
+        "2016": [
+          "CodeEventDjangoGirls",
+          "CodeEventGameJam",
+          "CodeEventGirlDev",
+          "CodeEventHackathons",
+          "CodeEventMeetup",
+          "CodeEventNodeSchool",
+          "CodeEventNone",
+          "CodeEventOther",
+          "CodeEventRailsBridge",
+          "CodeEventRailsGirls",
+          "CodeEventStartUpWknd",
+          "CodeEventWomenCode",
+          "CodeEventWorkshop"
+        ],
+        "2017": [
+          "CodeEventDjangoGirls",
+          "CodeEventGameJam",
+          "CodeEventGirlDev",
+          "CodeEventHackathons",
+          "CodeEventMeetup",
+          "CodeEventNodeSchool",
+          "CodeEventNone",
+          "CodeEventOther",
+          "CodeEventRailsBridge",
+          "CodeEventRailsGirls",
+          "CodeEventStartUpWknd",
+          "CodeEventWomenCode",
+          "CodeEventWorkshop",
+          "CodeEventWkdBootcamps",
+          "CodeEventFCC"
+        ]
+      }
+    },
+    "codePodcastsFollowing": {
+      "podcastsFollowing": {
+        "2016": [
+          "PodcastNone",
+          "PodcastOther"
+        ],
+        "2017": [
+          "PodcastNone",
+          "PodcastOther"
+        ]
+      },
+      "podcastsSelection": {
+        "2016": [
+          "PodcastChangeLog",
+          "PodcastCodeNewbie",
+          "PodcastCodingBlocks",
+          "PodcastDeveloperTea",
+          "PodcastDotNetRocks",
+          "PodcastHanselminutes",
+          "PodcastJsAir",
+          "PodcastJSJabber",
+          "PodcastProgrammingThrowDown",
+          "PodcastRubyRogues",
+          "PodcastSEDaily",
+          "PodcastShopTalk",
+          "PodcastTalkPython",
+          "PodcastWebAhead"
+        ],
+        "2017": [
+          "PodcastChangeLog",
+          "PodcastCodeNewbie",
+          "PodcastDevTea",
+          "PodcastDotNET",
+          "PodcastJsAir",
+          "PodcastJSJabber",
+          "PodcastProgThrowdown",
+          "PodcastRubyRogues",
+          "PodcastSEDaily",
+          "PodcastShopTalk",
+          "PodcastTalkPython",
+          "PodcastTheWebAhead",
+          "PodcastGiantRobots",
+          "PodcastSERadio",
+          "PodcastCodePen"
+        ]
+      }
+    },
+    "resourcesUsed": {
+      "blogsFollowed": {
+        "2016": [
+          "ResourceBlogs"
+        ],
+        "2017": []
+      },
+      "booksRead": {
+        "2016": [
+          "ResourceBooks"
+        ],
+        "2017": []
+      },
+      "googleSearches": {
+        "2016": [
+          "ResourceGoogle"
+        ],
+        "2017": []
+      },
+      "youtubeVideos": {
+        "2016": [
+          "ResourceYouTube"
+        ],
+        "2017": []
+      },
+      "otherResources": {
+        "2016": [
+          "ResourceOther"
+        ],
+        "2017": [
+          "ResourceOther"
+        ]
+      },
+      "resourceSelection": {
+        "2016": [
+          "ResourceCodecademy",
+          "ResourceCoursera",
+          "ResourceCodeWars",
+          "ResourceDevTips",
+          "ResourceEdX",
+          "ResourceEggHead",
+          "ResourceFCC",
+          "ResourceHackerRank",
+          "ResourceKhanAcademy",
+          "ResourceLynda",
+          "ResourceMDN",
+          "ResourceOdinProj",
+          "ResourcePluralSight",
+          "ResourceReddit",
+          "ResourceSkillCrush",
+          "ResourceStackOverflow",
+          "ResourceSoloLearn",
+          "ResourceTreehouse",
+          "ResourceUdacity",
+          "ResourceUdemy",
+          "ResourceW3Schools"
+        ],
+        "2017": [
+          "ResourceCodecademy",
+          "ResourceCoursera",
+          "ResourceCodeWars",
+          "ResourceCSS",
+          "ResourceEdX",
+          "ResourceEggHead",
+          "ResourceFCC",
+          "ResourceHackerRank",
+          "ResourceKA",
+          "ResourceLynda",
+          "ResourceMDN",
+          "ResourceOdinProj",
+          "ResourcePluralSight",
+          "ResourceSkillCrush",
+          "ResourceSO",
+          "ResourceTreehouse",
+          "ResourceUdacity",
+          "ResourceUdemy",
+          "ResourceW3S"
+        ]
+      },
+      "youtubeSelection": {
+        "2016": [],
+        "2017": [
+          "YouTubeCodeCourse",
+          "YouTubeCodingTrain",
+          "YouTubeCodingTut360",
+          "YouTubeComputerphile",
+          "YouTubeDerekBanas",
+          "YouTubeDevTips",
+          "YouTubeEngineeredTruth",
+          "YouTubeFCC",
+          "YouTubeFunFunFunction",
+          "YouTubeGoogleDev",
+          "YouTubeLearnCode",
+          "YouTubeLevelUpTuts",
+          "YouTubeMIT",
+          "YouTubeMozillaHacks",
+          "YouTubeOther",
+          "YouTubeSimplilearn",
+          "YouTubeTheNewBoston"
+        ]
+      }
+    }
+  }
+}
