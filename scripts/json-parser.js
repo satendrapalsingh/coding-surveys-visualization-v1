@@ -1,4 +1,4 @@
-// code for loading and parsing local map.json file //
+// code for uploading and parsing local map.json file //
 
 var mapJSON;
 // check if FileReader API supported by user's browser //

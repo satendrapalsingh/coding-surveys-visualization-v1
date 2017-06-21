@@ -3,6 +3,8 @@
     <head>
         <title>FCC New Coders Survey</title>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>        
+        <script type="text/javascript" src="/scripts/csv-parser.js"></script>              
+
     </head>
     
     <body>
@@ -17,79 +19,11 @@
         <p id="jsonData">huh</p>
         
 -->     
-        <div id="piechart">
-          <svg width="360" height="360">
-            <g transform="translate(180,180)">
-                
-            </g>
-          </svg>
-        </div>
 
        <p id="columnIndex">hello d3.csv</p>
        
-       <script>
-            var csvData;
-            var csvColumns;
-            var popElement = "";
 
-            function visualizeD3(columnIndex){
-                console.log("button index " + " " + columnIndex);  
-                
-            // visualize a pie chart //
-            var width = 360;
-            var height = 360;
-            var radius = Math.min(width, height) / 2;
-            var color = d3.scaleOrdinal(d3.schemeCategory20b);
-            
-            var svg = d3.select('#piechart')
-                    .append('svg')
-                    .attr('width', width)
-                    .attr('height', height)
-                    .append('g')
-                    .attr('transform', 'translate(' + (width/2) + ',' + (height/2) +')');
-            
-            var arc = d3.arc()
-                    .innerRadius(0)
-                    .outerRadius(radius);
-                    
-            var pie = d3.pie()
-                    .value(function(d){return d.count;})
-                    .sort(null);
-            
-            var path = svg.selectAll('path')
-                    .data(pie(csvData))
-                    .enter()
-                    .append('path')
-                    .attr('d',arc)
-                    .attr('fill', function(d,i){
-                        return color(d.data.label);
-                    })
-            }               
-    
-            d3.csv("survey-data/2016-FCC-New-Coders-Survey-Data.csv", function(error, dataset){
-                csvData = dataset;
-                csvColumns = Object.keys(csvData[0]);
-                
-                for (var idx in csvColumns){
-                    popElement += "<button id='" 
-                                + csvColumns[idx] 
-                                + "'"
-                                + " onclick='visualizeD3("
-                                + idx
-                                +")'"
-                                +">" 
-                                + csvColumns[idx] 
-                                + "</button>" 
-                                + "<br>";
-                };
-                
-                document.getElementById("columnIndex").innerHTML = popElement;
-            
-            });
-          
-       </script>
 <!--
-        <script type="text/javascript" src="/scripts/csv-parser.js"></script>              
         <script type="text/javascript" src="/scripts/json-parser.js"></script>
 -->
     </body>
