@@ -29,13 +29,20 @@
 
     });
   
-    
-
 
 // generate pie-chart on button-click (debugging mode)
     function generateChart(columnIndex){
-//        console.log("button index " + " " + columnIndex);  
 
+        var chartData = [];
+        
+        var selectedColumn = csvColumns[columnIndex];
+        console.log(selectedColumn);
+        
+        var chartTypeLookup = { Age:"bar", AttendedBootcamp:"pie"};
+        
+        var chartType = chartTypeLookup.selectedColumn;
+        console.log(chartType);
+        
 // dummy data for testing the pie-chart  
         dummyData = [
             ["ages 10-20", 30],
