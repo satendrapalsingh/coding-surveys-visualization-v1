@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>FCC New Coders Survey</title>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>        
-        <script type="text/javascript" src="/scripts/csv-parser.js"></script>              
+        
+<!-- load project and c3 css styles -->        
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.13/c3.min.css">
     </head>
     
     <body>
@@ -19,13 +20,13 @@
         <p id="jsonData">huh</p>
         
 -->     
-        <div id="pieChart">
-
-        </div>
-        
+        <div id="chart"></div>
         <p id="columnIndex">hello d3.csv</p>
        
-
+<!-- load d3, c3 and project scripts -->        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script> 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.13/c3.min.js"></script> 
+        <script type="text/javascript" src="/scripts/csv-parser.js"></script>  
 <!--
         <script type="text/javascript" src="/scripts/json-parser.js"></script>
 -->
