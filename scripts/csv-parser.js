@@ -2,11 +2,9 @@
     var csvData;            // var for storing csv data as array
     var csvColumns;         // var for storing csv column names
     var popElement = "";    // var for holding and passing generated html button elements
-    var dummyData = "helloji";
-    
 
 // parse the csv data into csvData with d3 & generate buttons from columns
-    d3.csv("survey-data/2016-FCC-New-Coders-Survey-Data.csv", function(error, dataset){
+    d3.csv("survey-data/test.csv", function(error, dataset){
         csvData = dataset;
         csvColumns = Object.keys(csvData[0]);
 
@@ -28,34 +26,41 @@
         document.getElementById("columnIndex").innerHTML = popElement;
 
     });
-  
 
 // generate pie-chart on button-click (debugging mode)
     function generateChart(columnIndex){
-
-        var chartData = [];
-        
+        var chartData = [[]];
         var selectedColumn = csvColumns[columnIndex];
-        console.log(selectedColumn);
+        var chartTypeLookup = {Age:"bar", Gender:"pie", Income:"scatter"};
+        var chartType = chartTypeLookup[csvColumns[columnIndex]];
         
-        var chartTypeLookup = { Age:"bar", AttendedBootcamp:"pie"};
+        function getChartData(csvDatasetName, selectedColumn){
+            var dataArray;
+//** code to get & display array element frequency as an array            
+            var arrayToCount = [0,1,2,2,2,3,1];
+            var countObj = arrayToCount.reduce(function(counter, item) {
+                    counter[item] = counter.hasOwnProperty(item) ? counter[item] + 1 : 1;
+                    return counter;
+                }, {});
+            
+            console.log(countObj);
+// convert count object to count array, fit for consumption by c3            
+            var countArray = Object.keys(countObj).map(function(e) {
+                return [Number(e), countObj[e]];
+            });
+            
+            console.log(countArray);
+//**            
+            return dataArray;
+        };
         
-        var chartType = chartTypeLookup.selectedColumn;
-        console.log(chartType);
+        chartData = getChartData(csvData, selectedColumn)
         
-// dummy data for testing the pie-chart  
-        dummyData = [
-            ["ages 10-20", 30],
-            ["ages 20-30", 40],
-            ["ages 30-40", 10],
-            ["ages 40-50", 20]
-        ];  
-
 // create the pie-chart with c3        
         var chart = c3.generate({
             data: {
-                columns: dummyData,
-                type: "pie"
+                columns: chartData,
+                type: chartType
            } 
         });
     }               
