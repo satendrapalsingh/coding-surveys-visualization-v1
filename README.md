@@ -20,7 +20,7 @@ __Roadmap for this version__
 
 
 __All/ Upcoming versions__
-- [ ] c3, bootstrap, node (this repo)
-- [ ] d3, bulma, node
+- [ ] c3, jquery, lodash, bootstrap, node (this repo)
+- [ ] d3, es6/7, bulma, node
 - [ ] recharts, react, rest-API, semantic-ui, express
 - [ ] vue-vis, vue, graphQL, material-design, koa, serverless, machine-learning/ chatbot
