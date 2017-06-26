@@ -1,10 +1,6 @@
-# FreeCodeCamp New Coders Survey Visualization
+# Programming Surveys Visualization
 
-This repository is for visualizing FreeCodeCamp's New Coders Survey data, using C3.
-Survey data currently available for years - 2016, 2017.
+This repository visualizes popular programming surveys results (FreeCodeCamp, Stackoverflow & Github surveys).
+This version uses C3/D3 for data visualization.
 
-*for the d3 version go here <link>*
-
-*=> currently testing csv-parsing of included csv file, alternative is to upload local map.json file*
-
-*=> remove map.json and json-parser.js if retaining the csv-parsing approach*
+***Work In Progress***
