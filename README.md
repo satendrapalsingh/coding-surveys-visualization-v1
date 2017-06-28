@@ -3,7 +3,8 @@
 ***Work In Progress***
 
 This repository visualizes popular programming surveys results (FreeCodeCamp, Stackoverflow & Github surveys).
-This version uses c3.js for data visualization.
+
+This version uses c3.js for data visualization on client-side.
 
 __Roadmap for this version__
 - [ ] Scripts for preprocessing survey data files (remove unnecessary columns, combine related columns etc)
@@ -17,10 +18,3 @@ __Roadmap for this version__
 - [ ] Node.js server to load all the data/csv files
 - [ ] Bootstrap for styling
 - [ ] JQuery for DOM manipulations/ state management
-
-
-__All/ Upcoming versions__
-- [ ] c3, jquery, lodash, bootstrap, node (this repo)
-- [ ] d3, es6/7, bulma, node
-- [ ] recharts, react, rest-API, semantic-ui, express
-- [ ] vue-vis, vue, graphQL, material-design, koa, serverless, machine-learning/ chatbot
