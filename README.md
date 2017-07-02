@@ -4,7 +4,7 @@
 
 This repository visualizes popular programming surveys results (FreeCodeCamp, Stackoverflow & Github surveys).
 
-This version uses c3.js for data visualization on client-side.
+Uses d3, bootstrap, jquery, node/ express (and possibly serverless).
 
 __Roadmap for this version__
 - [ ] Scripts for preprocessing survey data files (remove unnecessary columns, combine related columns etc)
@@ -15,6 +15,7 @@ __Roadmap for this version__
 - [ ] Visualize two (or more) columns together from one data file (correlation)
 - [ ] Visualize same/ similar data columns together from two (or more) data files (comparision/ trend)
 - [ ] Visualize unrelated data columns from two (or more) data files (flexible data insights)
-- [ ] Node.js server to load all the data/csv files
+- [ ] Node/Express server to load all the data/csv files
 - [ ] Bootstrap for styling
 - [ ] JQuery for DOM manipulations/ state management
+- [ ] Move to serverless with the Serverless Framework
