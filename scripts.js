@@ -1,4 +1,5 @@
-// code for parsing included csv survey data file //
+// client side code for parsing & visualizing csv data //
+
     var csvData;            // var for storing csv data as array
     var csvColumns;         // var for storing csv column names
     var popElement = "";    // var for holding and passing generated html button elements
