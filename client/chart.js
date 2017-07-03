@@ -2,9 +2,23 @@
 
 // generate data for a pie chart
     function makePieData(inData, inColumn){
-        var outData;
+    console.log("inColumn: " + inColumn);
+        var outObjArr = [];
         
-        return outData;
+        var outObj = inData.reduce(function(count, element){
+        	count[element[inColumn]] = (count[element[inColumn]] || 0) + 1;
+        	return count;
+        }, {});
+
+        Object.keys(outObj).forEach(function(key, index){
+        	var outObjEle = {};
+        	outObjEle[inColumn] = key;
+        	outObjEle.Count = outObj[key];
+        	outObjArr.push(outObjEle);
+        
+        });
+        
+        return outObjArr;
     };   
     
 // generate data for a bar chart
@@ -43,7 +57,8 @@
         
         switch(chartInputType) {
             case "pie":
-                chartInputData = makePieData(chartInData, chartSelectedColumn)                
+                chartInputData = makePieData(chartInData, chartSelectedColumn)    
+                console.log("chartInputData: " + JSON.stringify(chartInputData));
                 makePieChart(chartInputData, chartSelectedColumn);
                 break;
             case "bar":

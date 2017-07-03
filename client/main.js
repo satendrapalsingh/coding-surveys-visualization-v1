@@ -35,7 +35,7 @@
         var selectedColumn = csvColumns[columnIndex];
         var chartTypeLookup = {Age:"pie", Gender:"bar", Income:"scatter"};  //temporary chart-type lookup
         var chartType = chartTypeLookup[selectedColumn];  //get chart-type with selected column
-        
+
     // generate chart with d3
         makeChart(csvData, selectedColumn, chartType);
         

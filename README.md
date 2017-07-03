@@ -2,7 +2,7 @@
 
 ***Work In Progress***
 
-This repository visualizes popular programming surveys results (FreeCodeCamp, Stackoverflow & Github surveys).
+This repository visualizes popular programming survey results (FreeCodeCamp, Stackoverflow & Github surveys).
 
 Uses d3, bootstrap, jquery, node/ express (and possibly serverless).
 
