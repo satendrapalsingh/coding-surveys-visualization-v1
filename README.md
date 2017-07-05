@@ -27,3 +27,4 @@ __To Do__
 - [ ] Build and style the frontend using Bulma, Pug & SASS
 - [ ] Use only vanilla javascript/ es6 (as far as possible)
 - [ ] Move to serverless with the Serverless Framework, AWS Lambda and AWS Dynamodb
+    
