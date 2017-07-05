@@ -5,12 +5,12 @@
 This repository visualizes the following programming survey results using d3, node, bulma, pug, sass & (possibly) serverless.
 
 - [ ] FreeCodeCamp New Code Surveys 2016-17
-https://github.com/freeCodeCamp/2016-new-coder-survey   
-https://github.com/freeCodeCamp/2017-new-coder-survey
+- https://github.com/freeCodeCamp/2016-new-coder-survey
+- https://github.com/freeCodeCamp/2017-new-coder-survey
 - [ ] Stackoverflow Developer Surveys 2011-2016
-https://insights.stackoverflow.com/survey
+- https://insights.stackoverflow.com/survey
 - [ ] Github Open Source Survey 2017
-http://opensourcesurvey.org/2017/#data
+- http://opensourcesurvey.org/2017/#data
 
 
 __To Do__
