@@ -22,6 +22,7 @@ __To Do__
 - [ ] Visualize two (or more) columns together from one data file (correlation)
 - [ ] Visualize same/ similar data columns together from two (or more) data files (comparision/ trend)
 - [ ] Visualize unrelated data columns from two (or more) data files (flexible data insights)
+- [ ] Make site responsive and accessible
 - [ ] Set up a pure node.js server (without any middleware) for routing
 - [ ] Build and style the frontend using Bulma, Pug & SASS
 - [ ] Use only vanilla javascript/ es6 (as far as possible)
