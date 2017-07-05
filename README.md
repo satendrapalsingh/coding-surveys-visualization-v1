@@ -2,11 +2,19 @@
 
 ***Work In Progress***
 
-This repository visualizes popular programming survey results (FreeCodeCamp, Stackoverflow & Github surveys).
+This repository visualizes popular programming survey results:
 
-Uses d3, bootstrap, jquery, node/ express (and possibly serverless).
+- [] FreeCodeCamp New Code Surveys 2016-17
+- https://github.com/freeCodeCamp/2016-new-coder-survey   https://github.com/freeCodeCamp/2017-new-coder-survey
+- [] Stackoverflow Developer Surveys 2011-2016
+- https://insights.stackoverflow.com/survey
+- [] Github Open Source Survey 2017
+- http://opensourcesurvey.org/2017/#data
 
-__Roadmap for this version__
+__Tech Stack__
+This project uses D3, Node, Bulma, Pug, SASS, Serverless.
+
+__To Do__
 - [ ] Scripts for preprocessing survey data files (remove unnecessary columns, combine related columns etc)
 - [ ] Preprocess (and load) all survey data files
 - [x] Display data column headers (from a given data file) as clickable buttons
@@ -15,7 +23,7 @@ __Roadmap for this version__
 - [ ] Visualize two (or more) columns together from one data file (correlation)
 - [ ] Visualize same/ similar data columns together from two (or more) data files (comparision/ trend)
 - [ ] Visualize unrelated data columns from two (or more) data files (flexible data insights)
-- [ ] Node/Express server to load all the data/csv files
-- [ ] Bootstrap for styling
-- [ ] JQuery for DOM manipulations/ state management
-- [ ] Move to serverless with the Serverless Framework
+- [ ] Set up a pure node.js server (without any middleware) for routing
+- [ ] Build and style the frontend using Bulma, Pug & SASS
+- [ ] Use only vanilla javascript/ es6 (as far as possible)
+- [ ] Move to serverless with the Serverless Framework, AWS Lambda and AWS Dynamodb
