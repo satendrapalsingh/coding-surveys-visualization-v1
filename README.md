@@ -23,9 +23,8 @@ __To Do__
 - [ ] Visualize same/ similar data columns together from two (or more) data files (comparision/ trend)
 - [ ] Visualize unrelated data columns from two (or more) data files (flexible data insights)
 - [ ] Make site responsive and accessible
-- [ ] Set up a pure node.js server (without any middleware) for routing
+- [ ] Set up a node/ express server to render charts at the backend
 - [ ] Build and style the frontend using Bulma, Pug & SASS
-- [ ] Use only vanilla javascript/ es6 (as far as possible)
 - [ ] Move to serverless with the Serverless Framework, AWS Lambda and AWS Dynamodb
 - [ ] Add a deep machine-learning chatbot for survey predictions and data insights
     
