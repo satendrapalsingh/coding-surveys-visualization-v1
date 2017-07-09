@@ -17,7 +17,8 @@ __To Do__
 - [ ] Scripts for preprocessing survey data files (remove unnecessary columns, combine related columns etc)
 - [ ] Preprocess (and load) all survey data files
 - [x] Display data column headers (from a given data file) as clickable buttons
-- [ ] Simple pie-chart visualization on column button on-click (for a given data file)
+- [x] Simple pie-chart (client-side) visualization on column button on-click (for a given data file)
+- [ ] Move pie-chart visualization to server side
 - [ ] Visualize each column data as pie/bar chart (on click)
 - [ ] Visualize two (or more) columns together from one data file (correlation)
 - [ ] Visualize same/ similar data columns together from two (or more) data files (comparision/ trend)
