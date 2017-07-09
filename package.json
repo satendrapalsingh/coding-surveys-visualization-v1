@@ -1,0 +1,23 @@
+{
+  "name": "programming-surveys-visualization",
+  "version": "1.0.0",
+  "description": "visualizing programming surveys data with d3",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satenndrra/programming-surveys-visualization.git"
+  },
+  "author": "satenndrra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satenndrra/programming-surveys-visualization/issues"
+  },
+  "homepage": "https://github.com/satenndrra/programming-surveys-visualization#readme"
+}
