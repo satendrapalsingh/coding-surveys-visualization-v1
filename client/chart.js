@@ -37,85 +37,59 @@
 
 // create a pie chart
     function makePieChart(inData, inColumn){
-        var width = 960;
-        var height = 500;
-        var radius = Math.min(width, height)/2;
 
-    var data = [10, 20, 50];    
-
-    var color = d3.scaleOrdinal()
-        .range(["#98abc5", "#8a89a6", "#7b6888"]);
+//    var inData = [{"Age": "20yrs", "Count":10},{"Age": "20yrs", "Count":20},{"Age": "20yrs", "Count":50}];    
+  
+    var width = 750;                        //width
+    var height = 550;                            //height
+    var radius = Math.min(width, height)/2;                            //radius
     
-    var arc = d3.arc()
-        .outerRadius(radius - 10)
-        .innerRadius(0);
-    
-    var labelArc = d3.arc()
-        .outerRadius(radius - 40)
-        .innerRadius(radius - 40);
-    
-    var pie = d3.pie()
-        .sort(null)
-        .value(function(d) { return d; });
-    
-    var svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-      .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-    
-     var g = svg.selectAll(".arc")
-        .data(pie(data))
-        .enter().append("g")
-        .attr("class", "arc");
-    
-      g.append("path")
-          .attr("d", arc)
-          .style("fill", function(d) { return color(d.data); });
-    
-      g.append("text")
-          .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-          .attr("dy", ".35em")
-          .text(function(d) { return d.data; });
-
+    var color = d3.scale.category20c();     //builtin range of colors
         
-/*
-        var color = d3.scaleOrdinal()
-        	.range(["#2C93E8","#838690","#F56C4E"]);
-        
-        var pie = d3.pie()
-                .value(function(d){return d.Count})(inData);
+        var vis = d3.select("body")
+        .append("svg:svg")              //create the SVG element inside the <body>
+        .data([inData])                   //associate our data with the document
+            .attr("width", width)           //set the width and height of our visualization (these will be attributes of the <svg> tag
+            .attr("height", height)
+        .append("svg:g")                //make a group to hold our pie chart
+            .attr("transform", "translate(" + radius + "," + radius + ")")    //move the center of the pie chart from 0, 0 to radius, radius
 
-        var arc = d3.arc()
-                .outerRadius(radius-10)
-                .innerRadius(0);
+    var arc = d3.svg.arc()              //this will create <path> elements for us using arc data
+        .outerRadius(radius);
+
+    var pie = d3.layout.pie()           //this will create arc data for us given a list of values
+        .value(function(d) { return d.Count; });    //we must tell it out to access the value of each element in our data array
+
+    var arcs = vis.selectAll("g.slice")     //this selects all <g> elements with class slice (there aren't any yet)
+        .data(pie)                          //associate the generated pie data (an array of arcs, each having startAngle, endAngle and value properties) 
+        .enter()                            //this will create <g> elements for every "extra" data element that should be associated with a selection. The result is creating a <g> for every object in the data array
+            .append("svg:g")                //create a group to hold each slice (we will have a <path> and a <text> element associated with each slice)
+                .attr("class", "slice");    //allow us to style things in the slices (like text)
+
+        arcs.append("svg:path")
+                .attr("fill", function(d, i) { return color(i); } ) //set the color for each slice to be chosen from the color function defined above
+                .attr("d", arc);                                    //this creates the actual SVG path using the associated data (pie) with the arc drawing function
+
+        arcs.append("svg:text")                                     //add a label to each slice
+                .attr("transform", function(d) {                    //set the label's origin to the center of the arc
+                //we have to make sure to set these before calling arc.centroid
+                d.innerRadius = radius/2;
+                d.outerRadius = radius/2 + 10;
+                return "translate(" + arc.centroid(d) + ")";        //this gives us a pair of coordinates like [50, 50]
+            })
+            .attr("text-anchor", "middle")                          //center the text on it's origin
+            .text(function(d, i) { return inData[i].Age + " years"; });        //get the label from our original data array
+
+        arcs.append("svg:text")                                     //add a label to each slice
+                .attr("transform", function(d) {                    //set the label's origin to the center of the arc
+                //we have to make sure to set these before calling arc.centroid
+                d.innerRadius = 0;
+                d.outerRadius = radius/3;
+                return "translate(" + arc.centroid(d) + ")";        //this gives us a pair of coordinates like [50, 50]
+            })
+            .attr("text-anchor", "middle")                          //center the text on it's origin
+            .text(function(d, i) { return inData[i].Count; });        //get the label from our original data array
             
-        var labelArc = d3.arc()
-                    .outerRadius(radius-40)
-                    .innerRadius(radius-40);
-            
-        var svg = d3.select("#chart")
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .append("g")
-                .attr("transform", "translate(" + width/2 + "," + height/2 + ")");
-        
-        var g = svg.selectAll("arc")
-                .data(pie)
-                .enter()
-                .append("g")
-                .attr("class", "arc");
-                
-        g.append("path")
-            .attr("d", arc)
-            .style("fill", function(d){ return color(d.Age);});
-            
-        g.append("text")
-            .attr("transform", function(d) {return "translate(" + labelArc.centroid(d) + ")";})
-            .text(function(d) {return d.Age;})
-            .style("fill", "#fff");
-*/
     }
         
         

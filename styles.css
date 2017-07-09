@@ -3,3 +3,8 @@
 body{
     background-color: silver;
 }
+
+.slice text {
+    font-size: 0.6em;
+    font-family: Arial;
+} 
