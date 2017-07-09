@@ -6,7 +6,7 @@
 
 
 // parse the csv data into csvData with d3 & generate buttons from columns
-    d3.csv("survey-data/test.csv", function(error, dataset){
+    d3.csv("../survey-data/test.csv", function(error, dataset){
         csvData = dataset;
         csvColumns = Object.keys(csvData[0]);
 
