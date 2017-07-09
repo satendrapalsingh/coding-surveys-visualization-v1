@@ -1,6 +1,9 @@
 # Programming Surveys Visualization
 
-***Work In Progress***
+***Work In Progress/ Current (client-side) Demo here***
+
+https://programming-surveys-visualization-satenndrra.c9users.io/client/index.html
+
 
 This repository visualizes the following programming survey results using d3, node, bulma, pug, sass & (possibly) serverless.
 
